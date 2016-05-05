@@ -54,6 +54,13 @@ if [ "$SHOULD_DEPLOY" == "true" ]; then
   echo "# DEPLOYING #"
   echo "#############"
 
+  # could build this so that it is git ignored???
+  echo "################"
+  echo "# BUILDING CSS #"
+  echo "################"
+
+  npm run build:css
+
   echo "################################"
   echo "# CHANGING TO PARENT DIRECTORY #"
   echo "################################"
@@ -77,6 +84,12 @@ if [ "$SHOULD_DEPLOY" == "true" ]; then
   echo "###############"
 
   npm install
+
+  echo "##################"
+  echo "# NPM PREPUBLISH #"
+  echo "##################"
+
+  npm run prepublish
 
   echo "############"
   echo "# NPM LINK #"
