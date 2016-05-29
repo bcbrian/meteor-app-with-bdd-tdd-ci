@@ -6,7 +6,7 @@ Feature: Sign up
 
   Background:
     Given I am on the site "home not logged in" page
-  @focus
+  
   Scenario: Visitor is on sign in/up page
     When I click on "a[href='/sign-up']"
     Then I should see "h1#sign-up-header"

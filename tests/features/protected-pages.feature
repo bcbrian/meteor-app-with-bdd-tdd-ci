@@ -6,7 +6,7 @@ Feature: Redirect from protected sites
 
   Background:
     Given I am on the site "home not logged in" page
-  @focus
+  
   Scenario: Visitor is on home page
     When I visit "/user/fakeId38yyf/profile"
     Then I redirect to "/sign-in" and see "h1#sign-up-header"

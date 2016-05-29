@@ -13,7 +13,7 @@ export default class SignIn extends Component {
     return(
       <div className="container">
         <div>
-          <h1 id="sign-up-header">Sign In</h1>
+          <h1 id="sign-in-header">Sign In</h1>
         </div>
         <form ref="signInForm" onSubmit={this.handleSignIn.bind(this)}>
           <fieldset className="form-group">
