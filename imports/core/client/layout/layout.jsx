@@ -14,6 +14,12 @@ export default class Layout extends React.Component {
             <li className={"nav-item "+(this.props.isAtSomePage?"active":"")}>
               <a className="nav-link" href="/some-page">some-page</a>
             </li>
+            <li id="sign-in" className={"nav-item "+(this.props.isAtSignInPage?"active":"")}>
+              <a className="nav-link" href="/sign-in">Sign In</a>
+            </li>
+            <li id="sign-up" className={"nav-item "+(this.props.isAtSignUpPage?"active":"")}>
+              <a className="nav-link" href="/sign-up">Sign Up</a>
+            </li>
           </ul>
           <form className="form-inline pull-xs-right">
             <input className="form-control" type="text" placeholder="Search"/>

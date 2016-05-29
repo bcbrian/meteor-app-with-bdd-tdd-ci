@@ -6,6 +6,7 @@ avital:mocha@2.1.0_10
 babel-compiler@6.5.2
 babel-runtime@0.1.6
 base64@1.0.6
+bcbrian:test-helpers@0.0.1
 binary-heap@1.0.6
 blaze@2.1.5
 blaze-html-templates@1.0.2
@@ -87,3 +88,5 @@ underscore@1.0.6
 url@1.0.7
 webapp@1.2.6
 webapp-hashing@1.0.7
+xolvio:backdoor@0.1.2
+xolvio:cleaner@0.1.0

@@ -7,7 +7,7 @@ echo "#######################################"
 echo "# STARTING METEOR & RUNNING E2E TESTS #"
 echo "#######################################"
 
-meteor & chimp --ddp=http://localhost:3000 --browser=phantomjs
+USE_TEST_ENVIRONMENT=true meteor & chimp --ddp=http://localhost:3000 --browser=phantomjs
 E2E_TEST_RESULT=$?
 
 echo "######################"
