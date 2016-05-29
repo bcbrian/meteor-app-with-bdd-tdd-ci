@@ -7,8 +7,8 @@ module.exports = function() {
       "testpassword",
       {type:"user"}
     );
-    let _el = 'input#user-email';
-    browser.waitForExist(_el);
-    browser.setValue(_el, email);
+    let selector = 'input#user-email';
+    browser.waitForExist(selector);
+    browser.setValue(selector, email);
   });
 };
