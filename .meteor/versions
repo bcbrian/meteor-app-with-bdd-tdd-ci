@@ -80,7 +80,7 @@ standard-minifier-css@1.0.6
 standard-minifier-js@1.0.6
 templating@1.1.9
 templating-tools@1.0.4
-tmeasday:check-npm-versions@0.2.0
+tmeasday:check-npm-versions@0.3.1
 tmeasday:test-reporter-helpers@0.2.1
 tracker@1.0.13
 ui@1.0.11
@@ -88,5 +88,5 @@ underscore@1.0.8
 url@1.0.9
 webapp@1.2.8
 webapp-hashing@1.0.9
-xolvio:backdoor@0.1.2
-xolvio:cleaner@0.1.0
+xolvio:backdoor@0.2.0
+xolvio:cleaner@0.3.1
