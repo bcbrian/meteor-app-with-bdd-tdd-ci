@@ -13,6 +13,8 @@ import TestUtils from 'react-addons-test-utils';
 
 import SignIn from '../client/sign-in.jsx';
 
+import "/imports/test-helpers/methods/flow-router-hack.js"
+
 if (Meteor.isClient) {
   describe('Sign In UI', () => {
     let signIn;

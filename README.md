@@ -61,8 +61,9 @@ You will need to have node installed. A great way to manage this is [nvm](https:
 
 ### TODOS
 
-- Update avital:mocha to practicalmeteor:mocha
-- Update the local console runner package to the practicalmeteor:console-runner package when it is ready.
+- Romove `/imports/test-helpers/methods/flow-router-hack.js` when the hack is no longer needed
+> It was not needed with my forked version of spacejam...
+
 - Upgrade bootstrap 4 as new versions become available and stable.
 
 ### Known issues

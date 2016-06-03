@@ -11,6 +11,8 @@ import TestUtils from 'react-addons-test-utils';
 import Profile from '../client/profile.jsx';
 import UserProfile from '../client/user-profile.jsx';
 
+import "/imports/test-helpers/methods/flow-router-hack.js"
+
 if (Meteor.isClient) {
   describe('Profile UI', () => {
     let profile;
