@@ -9,6 +9,8 @@ import TestUtils from 'react-addons-test-utils';
 
 import SomePage from '../client/some-page.jsx';
 
+import "/imports/test-helpers/methods/flow-router-hack.js"
+
 if (Meteor.isClient) {
   describe('SomePage UI', () => {
     describe('Render', () => {

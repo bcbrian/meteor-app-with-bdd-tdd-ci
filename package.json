@@ -7,8 +7,8 @@
     "start": "meteor run",
     "start:chimp": "USE_TEST_ENVIRONMENT=true meteor run",
     "test": "./.scripts/test.sh",
-    "test:client": "meteor test --driver-package avital:mocha --port 3100",
-    "test:console": "spacejam test --driver-package console-test-runner --port 3100",
+    "test:client": "meteor test --driver-package practicalmeteor:mocha --port 3100",
+    "test:console": "spacejam test --driver-package practicalmeteor:mocha-console-runner --port 3100",
     "build:css": "node-sass --include-path node_modules client/main.scss client/bundle.css",
     "watch:css": "nodemon -e scss -x npm run build:css",
     "watch:help": "nodemon --help",
@@ -41,6 +41,6 @@
     "chimp": "^0.31.1",
     "nodemon": "^1.9.1",
     "react-addons-test-utils": "^15.0.1",
-    "spacejam": "git+https://git@github.com/bcbrian/spacejam.git"
+    "spacejam": "^1.6.1"
   }
 }

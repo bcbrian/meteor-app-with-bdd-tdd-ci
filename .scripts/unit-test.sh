@@ -1,26 +1,9 @@
 #!/bin/bash
-echo "###############################"
-echo "# PREPARING TO RUN UNIT TESTS #"
-echo "###############################"
-
-echo "######################"
-echo "# COPYING TEMP FILES #"
-echo "######################"
-
-cp .meteor/packages .meteor/packages_temp
-cp .meteor/versions .meteor/versions_temp
-
-echo "##############################"
-echo "# ADDING CONSOLE TEST RUUNER #"
-echo "##############################"
-
-echo "console-test-runner" >> .meteor/packages
-
 echo "######################"
 echo "# RUNNING UNIT TESTS #"
 echo "######################"
 
-spacejam test --driver-package console-test-runner --port 3100
+spacejam test --driver-package practicalmeteor:mocha-console-runner --port 3100
 UNIT_TEST_RESULT=$?
 
 echo "#######################"
@@ -40,13 +23,6 @@ else
   echo "# UNIT TESTS FAILED #"
   echo "#####################"
 fi
-
-echo "######################"
-echo "# MOVING TEMP FILES #"
-echo "######################"
-
-mv .meteor/packages_temp .meteor/packages
-mv .meteor/versions_temp .meteor/versions
 
 echo "####################"
 echo "# RETURNING RESULT #"
