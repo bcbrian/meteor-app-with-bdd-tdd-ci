@@ -21,6 +21,7 @@ react-meteor-data
 kadira:flow-router
 accounts-password
 tmeasday:test-reporter-helpers
-bcbrian:test-helpers
 practicalmeteor:mocha
 practicalmeteor:mocha-console-runner
+xolvio:backdoor
+xolvio:cleaner
