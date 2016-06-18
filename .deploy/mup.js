@@ -16,7 +16,7 @@ module.exports = {
       },
       env: {
         PORT: 3000,
-        ROOT_URL: 'http://bcbrian.com',
+        ROOT_URL: 'http://meteor-app.bcbrian.com',
         MONGO_URL: 'mongodb://localhost/meteor'
       },
       deployCheckWaitTime: 60
