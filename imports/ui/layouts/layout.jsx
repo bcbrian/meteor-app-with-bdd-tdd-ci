@@ -4,7 +4,8 @@ import { createContainer } from 'meteor/react-meteor-data';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 
 export class Layout extends React.Component {
-  signOut(){
+  signOut(event){
+    event.preventDefault();
     Meteor.logout(()=>{
       FlowRouter.go("/sign-in");
     })
