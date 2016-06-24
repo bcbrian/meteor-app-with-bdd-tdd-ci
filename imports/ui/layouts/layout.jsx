@@ -3,7 +3,12 @@ import { Meteor } from 'meteor/meteor';
 import { createContainer } from 'meteor/react-meteor-data';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 
+import LoadingScreen from '/imports/ui/components/loading-screen.jsx';
+
 export class Layout extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   signOut(event){
     event.preventDefault();
     Meteor.logout(()=>{
@@ -13,6 +18,7 @@ export class Layout extends React.Component {
   render(){
     return (
       <div>
+        <LoadingScreen />
         <header>
         <nav className="navbar navbar-light bg-faded">
           <a className="navbar-brand" href="/">bcbrian</a>
